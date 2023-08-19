@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TASK</title>
+	<style type="text/css">
+	table{
+            border-collapse: collapse;
+            width: 70%;
+            border: 2px solid black;
+            text-align: center;
+            margin-left: 15%;
+        }
+        th,td{
+            border: 2px solid black;
+
+        }
+    </style>
+</head>
+<body>
+		<table border="" id="c">
+			<thead>
+			<tr>
+				<th>course name</th>
+				<th>course number</th>
+				<th>course fees</th>
+				<th>place</th>
+			</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+		<script type="text/javascript">
+			var a= [{
+				'name':'html',
+				'number':'093423',
+				'fees':'35k',
+				'place':'ppp',
+			},
+			{
+				'name':'css',
+				'number':'012845',
+				'fees':'35k',
+				'place':'ppp',
+			},
+			{
+				'name':'javascript',
+				'number':'67864',
+				'fees':'56k',
+				'place':'ppp',
+			}
+			]
+
+			console.log(c)
+			console.log(a)
+			
+			for (var i = 0; i<a.length; i++) {
+			document.getElementsByTagName("tbody")[0].innerHTML+="<tr><td>"+a[i].name+"</td><td>"+a[i].number+"</td><td>"+a[i].fees+"</td><td>"+a[i].place+"</td></tr>"
+		}
+		</script>
+
+</body>
+</html>
